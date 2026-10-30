@@ -1,0 +1,225 @@
+/* ==========================================================================
+   PARTNER BRANDS - ENHANCED SCROLLABLE MARQUEE STYLES
+   ========================================================================== */
+
+.brandsSection {
+  width: 100%;
+  padding: 38px 20px 42px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border-top: 1px solid #EEF2F6;
+  border-bottom: 1px solid #EEF2F6;
+  position: relative;
+  overflow: hidden;
+
+  &.darkTheme {
+    background: linear-gradient(135deg, #07132B 0%, #0B1B3D 100%);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+}
+
+.brandsContainer {
+  max-width: 1240px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+/* Header Badge */
+.headerBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 6px 20px;
+  border-radius: 30px;
+  background: #EFF6FF;
+  border: 1px solid #DBEAFE;
+  box-shadow: 0 2px 8px rgba(0, 102, 255, 0.06);
+
+  .darkTheme & {
+    background: rgba(0, 102, 255, 0.14);
+    border-color: rgba(0, 102, 255, 0.32);
+    box-shadow: 0 2px 12px rgba(0, 102, 255, 0.12);
+  }
+}
+
+.pulseDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #0066FF;
+  box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.2);
+  display: inline-block;
+  animation: pulseDot 2s infinite ease-in-out;
+}
+
+@keyframes pulseDot {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.2);
+  }
+  50% {
+    transform: scale(1.2);
+    box-shadow: 0 0 0 6px rgba(0, 102, 255, 0.35);
+  }
+}
+
+.badgeText {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+  color: #0066FF;
+  text-transform: uppercase;
+
+  .darkTheme & {
+    color: #60A5FA;
+  }
+}
+
+.subtitle {
+  font-size: 14.5px;
+  font-weight: 500;
+  color: #64748B;
+  margin: 0 0 24px 0;
+  line-height: 1.5;
+
+  .darkTheme & {
+    color: #94A3B8;
+  }
+}
+
+/* Marquee Shell (The Outer Card matching reference) */
+.marqueeCard {
+  position: relative;
+  width: 100%;
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 20px;
+  padding: 18px 0;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(11, 27, 61, 0.03);
+  box-sizing: border-box;
+
+  .darkTheme & {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Fade masks on left & right edges */
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 60px;
+    z-index: 5;
+    pointer-events: none;
+  }
+
+  &::before {
+    left: 0;
+    background: linear-gradient(to right, #F8FAFC 20%, rgba(248, 250, 252, 0) 100%);
+
+    .darkTheme & {
+      background: linear-gradient(to right, #081530 20%, rgba(8, 21, 48, 0) 100%);
+    }
+  }
+
+  &::after {
+    right: 0;
+    background: linear-gradient(to left, #F8FAFC 20%, rgba(248, 250, 252, 0) 100%);
+
+    .darkTheme & {
+      background: linear-gradient(to left, #081530 20%, rgba(8, 21, 48, 0) 100%);
+    }
+  }
+
+  &:hover .marqueeTrack {
+    animation-play-state: paused;
+  }
+}
+
+/* Scrolling Track */
+.marqueeTrack {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  will-change: transform;
+  animation: scrollMarquee 42s linear infinite;
+
+  @media (max-width: 768px) {
+    animation-duration: 32s;
+  }
+}
+
+@keyframes scrollMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Single Brand Unit inside Track */
+.brandUnit {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.brandLogoBox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 28px;
+  cursor: pointer;
+  transition: transform 0.25s ease, filter 0.25s ease;
+  position: relative;
+
+  &:hover {
+    transform: scale(1.08);
+
+    .brandTooltip {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  }
+}
+
+.brandTooltip {
+  position: absolute;
+  bottom: -22px;
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  background: #07132B;
+  color: #FFFFFF;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, transform 0.2s;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.brandDivider {
+  width: 1.5px;
+  height: 28px;
+  background: #CBD5E1;
+  opacity: 0.65;
+  flex-shrink: 0;
+
+  .darkTheme & {
+    background: rgba(255, 255, 255, 0.18);
+  }
+}

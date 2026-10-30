@@ -1,0 +1,91 @@
+export default [
+  {
+    path: '/',
+    name: 'home',
+    component: './HomeDesign',
+    layout: false,
+  },
+  {
+    path: '/home',
+    name: 'homeAlt',
+    component: './HomeDesign',
+    layout: false,
+  },
+  {
+    path: '/about-us',
+    name: 'aboutUs',
+    component: './SectionPage',
+    layout: false,
+  },
+  {
+    path: '/solutions',
+    name: 'solutions',
+    component: './SectionPage',
+    layout: false,
+  },
+  {
+    path: '/amc',
+    name: 'amc',
+    component: './SectionPage',
+    layout: false,
+  },
+  {
+    path: '/cost-calculator',
+    name: 'costCalculator',
+    component: './SectionPage',
+    layout: false,
+  },
+  {
+    path: '/cctv-cost-calculator',
+    name: 'cctvCostCalculator',
+    component: './SectionPage',
+    layout: false,
+  },
+  {
+    path: '/services',
+    name: 'services',
+    component: './SectionPage',
+    layout: false,
+  },
+  {
+    path: '/services/:slug',
+    name: 'serviceDetail',
+    component: './VerticalPage',
+    layout: false,
+  },
+  {
+    path: '/blogs',
+    name: 'blogs',
+    component: './SectionPage',
+    layout: false,
+  },
+  {
+    path: '/blog',
+    name: 'blog',
+    component: './SectionPage',
+    layout: false,
+  },
+  {
+    path: '/blogs/:id',
+    name: 'blogDetail',
+    component: './SectionPage',
+    layout: false,
+  },
+  {
+    path: '/blog/:id',
+    name: 'blogDetailAlias',
+    component: './SectionPage',
+    layout: false,
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: './SectionPage',
+    layout: false,
+  },
+  {
+    path: '*',
+    layout: false,
+    component: './404',
+  },
+];

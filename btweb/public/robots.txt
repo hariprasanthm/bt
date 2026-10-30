@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /account/
+Disallow: /vd
+
+Sitemap: https://www.integraminds.in/sitemap.xml

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" width="500" height="120" fill="none">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="50%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="cyanNeon" x1="0" y1="0" x2="100" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shield Monogram -->
+  <g transform="translate(10, 10)">
+    <path d="M50 4L90 22V52C90 74 72.8 92.4 50 97C27.2 92.4 10 74 10 52V22L50 4Z" fill="#0B132B" stroke="url(#shieldGrad)" stroke-width="4"/>
+    <path d="M50 16L78 29V52C78 67 66 80 50 84C34 80 22 67 22 52V29L50 16Z" fill="rgba(6, 182, 212, 0.1)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.5"/>
+    <!-- BT Monogram -->
+    <rect x="32" y="32" width="36" height="7" rx="3.5" fill="url(#cyanNeon)"/>
+    <rect x="46.5" y="32" width="7" height="34" rx="3.5" fill="url(#cyanNeon)"/>
+    <path d="M53 35H64C68 35 71 38 71 42C71 46 68 49 64 49H53" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+    <path d="M53 49H66C70.5 49 74 52.5 74 57C74 61.5 70.5 65 66 65H53" stroke="#10B981" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="50" cy="50" r="3.5" fill="#22D3EE"/>
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(125, 30)">
+    <text x="0" y="32" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="28" fill="#F8FAFC" letter-spacing="1">
+      BEST TECHNOLOGY
+    </text>
+    <text x="0" y="58" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="14" fill="#06B6D4" letter-spacing="4">
+      IT SOLUTION
+    </text>
+    <text x="145" y="58" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="12" fill="#94A3B8" letter-spacing="1">
+      // SECURITY SYSTEMS
+    </text>
+  </g>
+</svg>
