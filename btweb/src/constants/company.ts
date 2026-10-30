@@ -50,8 +50,8 @@ export interface BlogPost {
 }
 
 export const COMPANY = {
-  name: 'Best Technologies',
-  shortName: 'Best Technologies',
+  name: 'Best Technology',
+  shortName: 'Best Technology',
   tagline: 'Your Trusted Security Partner',
   slogan: 'Integrated Electronic Security Solutions — Experience security without compromise.',
   vision: 'To deliver intelligent, tailor-made electronic security and smart infrastructure systems that safeguard businesses, institutions, and communities with zero compromise.',

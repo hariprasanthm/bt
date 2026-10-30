@@ -40,10 +40,10 @@ export const HomeDesign: React.FC = () => {
   return (
     <SiteShell>
       <Seo
-        title="Best Technologies | Smart Security for a Safer Tomorrow"
-        description="Best Technologies delivers integrated electronic security, CCTV surveillance, biometric access control, fire detection, IT hardware, entry automation, and GPS telematics."
+        title="Best Technology | Smart Security for a Safer Tomorrow"
+        description="Best Technology delivers integrated electronic security, CCTV surveillance, biometric access control, fire detection, IT hardware, entry automation, and GPS telematics."
         path="/"
-        keywords="Best Technologies, electronic security, CCTV camera, access control, fire alarm, IT hardware, entry automation, boom barrier, GPS fleet, AMC maintenance"
+        keywords="Best Technology, electronic security, CCTV camera, access control, fire alarm, IT hardware, entry automation, boom barrier, GPS fleet, AMC maintenance"
       />
 
       {/* =========================================================================
@@ -580,7 +580,7 @@ export const HomeDesign: React.FC = () => {
             <a
               href={`tel:${COMPANY.phoneRaw}`}
               className={styles.pillArrowCircle}
-              aria-label="Call Best Technologies"
+              aria-label="Call Best Technology"
             >
               <ArrowRightIcon size={18} />
             </a>

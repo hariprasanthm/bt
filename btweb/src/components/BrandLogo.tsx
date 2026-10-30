@@ -43,7 +43,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
         >
           <img
             src="/logo.png"
-            alt="Best Technologies Logo"
+            alt="Best Technology Logo"
             style={{
               height: `${px}px`,
               width: 'auto',
@@ -55,7 +55,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
       ) : (
         <img
           src="/logo.png"
-          alt="Best Technologies Logo"
+          alt="Best Technology Logo"
           style={{
             height: `${px}px`,
             width: 'auto',

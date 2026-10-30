@@ -50,7 +50,7 @@ export const SiteShell: React.FC<{ children: React.ReactNode }> = ({ children })
         <Link
           to="/"
           className={styles.brandLink}
-          aria-label="Best Technologies Home"
+          aria-label="Best Technology Home"
           onClick={() => setMenuOpen(false)}
         >
           <BrandLogo size="md" />

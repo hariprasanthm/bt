@@ -149,7 +149,7 @@ export const SectionPage: React.FC = () => {
     return (
       <SiteShell>
         <Seo
-          title="About Us | Best Technologies - Your Trusted Security Partner"
+          title="About Us | Best Technology - Your Trusted Security Partner"
           description="Learn about Best Technology IT Solution: 5+ years of electronic security excellence, turnkey CCTV integration, 4-hour breakdown SLA, and door-to-cloud security systems."
           path="/about-us"
         />
@@ -233,7 +233,7 @@ export const SectionPage: React.FC = () => {
               <div className={styles.aboutHeroDomeStage}>
                 <img
                   src="/images/about-hero-camera.webp"
-                  alt="Best Technologies Starlight Optical Dome Camera"
+                  alt="Best Technology Starlight Optical Dome Camera"
                   className={styles.aboutHeroDomeImg}
                 />
                 <div className={styles.floatingSlaBadge}>
@@ -312,7 +312,7 @@ export const SectionPage: React.FC = () => {
               <div className={styles.visualImgCard}>
                 <img
                   src="/images/cctv-amc-inspection.webp"
-                  alt="Certified Best Technologies Field Technician Inspecting Surveillance Camera"
+                  alt="Certified Best Technology Field Technician Inspecting Surveillance Camera"
                   loading="lazy"
                 />
                 <div className={styles.visualCardOverlay}>
@@ -796,8 +796,8 @@ export const SectionPage: React.FC = () => {
     return (
       <SiteShell>
         <Seo
-          title="Solutions | Best Technologies - Complete Security & IT Solutions"
-          description="Explore Best Technologies' complete security ecosystem: IP/AHD surveillance, fire detection, access control, RFID, control room video walls, special AI cameras, entry automation, and GPS fleet tracking."
+          title="Solutions | Best Technology - Complete Security & IT Solutions"
+          description="Explore Best Technology' complete security ecosystem: IP/AHD surveillance, fire detection, access control, RFID, control room video walls, special AI cameras, entry automation, and GPS fleet tracking."
           path="/solutions"
         />
 
@@ -846,7 +846,7 @@ export const SectionPage: React.FC = () => {
               <div className={styles.solutionsDomeStage}>
                 <img
                   src="/images/about-hero-camera.webp"
-                  alt="Best Technologies Ceiling Surveillance Camera"
+                  alt="Best Technology Ceiling Surveillance Camera"
                   className={styles.solutionsDomeImg}
                 />
               </div>
@@ -1143,7 +1143,7 @@ export const SectionPage: React.FC = () => {
     return (
       <SiteShell>
         <Seo
-          title="AMC Services | Best Technologies - Keep Your Systems Running Without Worry"
+          title="AMC Services | Best Technology - Keep Your Systems Running Without Worry"
           description="Comprehensive and Non-Comprehensive Annual Maintenance Contracts (AMC) for CCTV surveillance, access control, fire alarms, boom barriers, and IT infrastructure."
           path="/amc"
         />
@@ -1200,7 +1200,7 @@ export const SectionPage: React.FC = () => {
               <div className={styles.amcTechnicianStage}>
                 <img
                   src="/images/amc-technician.webp"
-                  alt="Best Technologies Field Engineer Inspecting Security System"
+                  alt="Best Technology Field Engineer Inspecting Security System"
                 />
                 <div className={styles.amcFloatingCards}>
                   <div className={styles.amcFloatingCard}>
@@ -1451,7 +1451,7 @@ export const SectionPage: React.FC = () => {
             <div className={styles.bottomDomeVisual}>
               <img
                 src="/images/amc-banner-camera.webp"
-                alt="Best Technologies 360 Starlight Surveillance Camera"
+                alt="Best Technology 360 Starlight Surveillance Camera"
               />
             </div>
 
@@ -1572,7 +1572,7 @@ export const SectionPage: React.FC = () => {
         `Features: ${calcFeatures.join(', ') || 'Standard Night Vision'}`,
         `Indicative Estimate: ₹ ${estimate.min.toLocaleString('en-IN')} – ${estimate.max.toLocaleString('en-IN')}`,
         `----------------------------------------`,
-        `Hello Best Technologies, I configured this on your website CCTV Cost Calculator. Please share a detailed quote and schedule a site survey.`,
+        `Hello Best Technology, I configured this on your website CCTV Cost Calculator. Please share a detailed quote and schedule a site survey.`,
       ].join('\n');
 
       return `https://wa.me/918675248969?text=${encodeURIComponent(text)}`;
@@ -1617,7 +1617,7 @@ export const SectionPage: React.FC = () => {
     return (
       <SiteShell>
         <Seo
-          title="CCTV Cost Calculator | Best Technologies - Plan Your Security & Estimate Cost"
+          title="CCTV Cost Calculator | Best Technology - Plan Your Security & Estimate Cost"
           description="Build your custom CCTV system in minutes. Calculate real-time estimated costs for Analog HD and IP Network security cameras, recorders, and hard drives."
           path="/cost-calculator"
         />
@@ -1663,7 +1663,7 @@ export const SectionPage: React.FC = () => {
               <div className={styles.calcCamerasCluster}>
                 <img
                   src="/images/cctv-bullet.png"
-                  alt="Best Technologies Wall Mount Surveillance Cameras"
+                  alt="Best Technology Wall Mount Surveillance Cameras"
                 />
               </div>
               <div className={styles.calcScriptCaption}>
@@ -3083,7 +3083,7 @@ export const SectionPage: React.FC = () => {
     return (
       <SiteShell>
         <Seo
-          title={`${post.title} | Best Technologies Blog`}
+          title={`${post.title} | Best Technology Blog`}
           description={post.summary}
           path={`/blogs/${post.id}`}
         />
@@ -3131,7 +3131,7 @@ export const SectionPage: React.FC = () => {
               </p>
             </div>
             <a
-              href={`https://wa.me/918675248969?text=${encodeURIComponent(`Hello Best Technologies, I read your article "${post.title}" and would like to discuss implementing this solution.`)}`}
+              href={`https://wa.me/918675248969?text=${encodeURIComponent(`Hello Best Technology, I read your article "${post.title}" and would like to discuss implementing this solution.`)}`}
               target="_blank"
               rel="noopener noreferrer"
               className={styles.heroPrimaryBtn}
@@ -3157,8 +3157,8 @@ export const SectionPage: React.FC = () => {
   return (
     <SiteShell>
       <Seo
-        title="Contact Us | Best Technologies - Let's Build a Safer Tomorrow Together"
-        description="Get in touch with Best Technologies for enquiries, quotations, or 24/7 technical support. Call +91-8675248969 or email sales@besttechnologys.com."
+        title="Contact Us | Best Technology - Let's Build a Safer Tomorrow Together"
+        description="Get in touch with Best Technology for enquiries, quotations, or 24/7 technical support. Call +91-8675248969 or email sales@besttechnologys.com."
         path="/contact"
       />
 
@@ -3182,7 +3182,7 @@ export const SectionPage: React.FC = () => {
             <div className={styles.contactDomeStage}>
               <img
                 src="/images/about-hero-camera.webp"
-                alt="Best Technologies Ceiling Surveillance Camera"
+                alt="Best Technology Ceiling Surveillance Camera"
               />
             </div>
             <div className={styles.contactFrostedCard}>

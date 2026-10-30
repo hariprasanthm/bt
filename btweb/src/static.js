@@ -10,7 +10,7 @@ export const G_EDUCATION = [
     imageUrl: 'https://d5wa1rycpxuyp.cloudfront.net/im/assets/e1.png',
     rUrl: '/services/ceet',
     // rUrl: '/pdf/ceet-brochure.pdf',
-    desc: 'Our Centre of Excellence in Emerging Technologies offers state-of-the-art certification and training programmes that will keep your employees on the cutting edge. We concentrate on the most recent developments and innovations to make sure your team gains the abilities and know-how required to succeed in a quickly changing digital environment. With our thorough and widely accepted certification programmes, we support your companys long-term development, innovation, and competitiveness.',
+    desc: 'Our Centre of Excellence in Emerging Technology offers state-of-the-art certification and training programmes that will keep your employees on the cutting edge. We concentrate on the most recent developments and innovations to make sure your team gains the abilities and know-how required to succeed in a quickly changing digital environment. With our thorough and widely accepted certification programmes, we support your companys long-term development, innovation, and competitiveness.',
     title: 'CEET & Certifications',
   },
   {
