@@ -18,7 +18,7 @@ const Settings: ProLayoutProps & {
   colorWeak: false,
   locale: 'en-US',
   pwa: true,
-  logo: COMPANY.logoSvgUrl,
+  logo: COMPANY.logoUrl,
   token: {
     // Dark theme for the mobile nav drawer (sider) to match the site
     sider: {

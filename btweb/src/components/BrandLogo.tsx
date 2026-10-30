@@ -31,27 +31,16 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
       }}
     >
       {theme === 'dark' ? (
-        <div
+        <img
+          src="/images/logo-white.png"
+          alt="Best Technology Logo"
           style={{
-            background: '#FFFFFF',
-            padding: '6px 14px',
-            borderRadius: '8px',
-            display: 'inline-flex',
-            alignItems: 'center',
-            boxShadow: '0 2px 8px rgba(0,0,0,0.12)',
+            height: `${px}px`,
+            width: 'auto',
+            objectFit: 'contain',
+            display: 'block',
           }}
-        >
-          <img
-            src="/logo.png"
-            alt="Best Technology Logo"
-            style={{
-              height: `${px}px`,
-              width: 'auto',
-              objectFit: 'contain',
-              display: 'block',
-            }}
-          />
-        </div>
+        />
       ) : (
         <img
           src="/logo.png"
